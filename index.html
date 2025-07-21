@@ -30,20 +30,20 @@
 
   <script>
 	function getImagePath(cardName) {
-    if (/^\d+_/.test(cardName)) {
-      return `file:///D:/tarot/大牌/${cardName}.jpg`;
-    } else if (cardName.startsWith("Cups_")) {
-      return `file:///D:/tarot/聖杯/${cardName}.jpg`;
-    } else if (cardName.startsWith("Wands_")) {
-      return `file:///D:/tarot/權杖/${cardName}.jpg`;
-    } else if (cardName.startsWith("Swords_")) {
-      return `file:///D:/tarot/寶劍/${cardName}.jpg`;
-    } else if (cardName.startsWith("Pentacles_")) {
-      return `file:///D:/tarot/金幣/${cardName}.jpg`;
-    } else {
-      return "";
-    }
+  if (/^\d+_/.test(cardName)) {
+    return `./大牌/${cardName}.jpg`;
+  } else if (cardName.startsWith("Cups_")) {
+    return `./聖杯/${cardName}.jpg`;
+  } else if (cardName.startsWith("Wands_")) {
+    return `./權杖/${cardName}.jpg`;
+  } else if (cardName.startsWith("Swords_")) {
+    return `./寶劍/${cardName}.jpg`;
+  } else if (cardName.startsWith("Pentacles_")) {
+    return `./金幣/${cardName}.jpg`;
+  } else {
+    return "";
   }
+}
     const allCards = [
       // 大牌
       "0_愚者", "1_魔術師", "2_女祭司", "3_女皇", "4_皇帝",
