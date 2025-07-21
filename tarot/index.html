@@ -31,26 +31,26 @@
   <script>
 	function getImagePath(cardName) {
   if (/^\d+_/.test(cardName)) {
-    return `./大牌/${cardName}.jpg`;
+    return `major/${cardName}.jpg`;
   } else if (cardName.startsWith("Cups_")) {
-    return `./聖杯/${cardName}.jpg`;
+    return `cups/${cardName}.jpg`;
   } else if (cardName.startsWith("Wands_")) {
-    return `./權杖/${cardName}.jpg`;
+    return `wands/${cardName}.jpg`;
   } else if (cardName.startsWith("Swords_")) {
-    return `./寶劍/${cardName}.jpg`;
+    return `swords/${cardName}.jpg`;
   } else if (cardName.startsWith("Pentacles_")) {
-    return `./金幣/${cardName}.jpg`;
+    return `pentacles/${cardName}.jpg`;
   } else {
     return "";
   }
 }
     const allCards = [
-      // 大牌
-      "0_愚者", "1_魔術師", "2_女祭司", "3_女皇", "4_皇帝",
-      "5_教皇", "6_戀人", "7_戰車", "8_力量", "9_隱者",
-      "10_命運之輪", "11_正義", "12_吊人", "13_死神", "14_節制",
-      "15_惡魔", "16_塔", "17_星星", "18_月亮", "19_太陽",
-      "20_審判", "21_世界",
+  // 大牌
+  "0_fool", "1_magician", "2_high_priestess", "3_empress", "4_emperor",
+  "5_hierophant", "6_lovers", "7_chariot", "8_strength", "9_hermit",
+  "10_wheel_of_fortune", "11_justice", "12_hanged_man", "13_death", "14_temperance",
+  "15_devil", "16_tower", "17_star", "18_moon", "19_sun",
+  "20_judgement", "21_world",
 
       // 小牌（舉例 Cups, 可依命名加入其餘）
       "Cups_1", "Cups_2", "Cups_3", "Cups_4", "Cups_5", "Cups_6", "Cups_7", "Cups_8", "Cups_9", "Cups_10",
@@ -67,28 +67,30 @@
     ];
 
     const meanings = {
-      "0_愚者": { upright: "冒險、自由、新開始", reversed: "魯莽、逃避、迷失方向" },
-      "1_魔術師": { upright: "創造力、溝通、掌控力", reversed: "欺騙、技能不足、操弄" },
-      "2_女祭司": { upright: "直覺、潛意識、內在智慧", reversed: "隱瞞、迷惑、封閉" },
-      "3_女皇": { upright: "豐饒、成長、滋養", reversed: "停滯、過度依賴、懶散" },
-      "4_皇帝": { upright: "穩定、父性、權威", reversed: "專制、僵化、冷酷" },
-      "5_教皇": { upright: "傳統、信仰、學習", reversed: "質疑、叛逆、教條" },
-      "6_戀人": { upright: "愛情、選擇、和諧", reversed: "誘惑、分歧、衝突" },
-      "7_戰車": { upright: "勝利、意志力、掌控", reversed: "失控、挫敗、爭執" },
-      "8_力量": { upright: "勇氣、內在力量、溫柔克服", reversed: "情緒失控、懦弱、壓抑" },
-      "9_隱者": { upright: "內省、智慧、靜心", reversed: "孤立、迷失、封閉" },
-      "10_命運之輪": { upright: "轉變、機運、循環", reversed: "停滯、命運阻礙、抗拒改變" },
-      "11_正義": { upright: "公平、真理、因果", reversed: "不公、偏頗、逃避責任" },
-      "12_吊人": { upright: "犧牲、等待、放下", reversed: "拖延、頑固、逃避" },
-      "13_死神": { upright: "轉化、重生、釋放", reversed: "抗拒改變、停滯、恐懼" },
-      "14_節制": { upright: "平衡、協調、療癒", reversed: "失衡、極端、不安" },
-      "15_惡魔": { upright: "誘惑、束縛、物質慾望", reversed: "擺脫束縛、覺醒" },
-      "16_塔": { upright: "突變、崩壞、重建", reversed: "否認改變、災難拖延" },
-      "17_星星": { upright: "希望、療癒、靈感", reversed: "失望、迷惘、信心低落" },
-      "18_月亮": { upright: "直覺、夢境、潛意識", reversed: "幻覺、欺騙、混亂" },
-      "19_太陽": { upright: "成功、喜悅、正能量", reversed: "延遲、不安、傲慢" },
-      "20_審判": { upright: "覺醒、重生、反省", reversed: "拖延、批判、迷惑" },
-      "21_世界": { upright: "完成、圓滿、整合", reversed: "未完成、停滯、封閉" },
+  "0_fool": { upright: "冒險、自由、新開始", reversed: "魯莽、逃避、迷失方向" },
+  "1_magician": { upright: "創造力、溝通、掌控力", reversed: "欺騙、技能不足、操弄" },
+  "2_high_priestess": { upright: "直覺、潛意識、內在智慧", reversed: "隱瞞、迷惑、封閉" },
+  "3_empress": { upright: "豐饒、成長、滋養", reversed: "停滯、過度依賴、懶散" },
+  "4_emperor": { upright: "穩定、父性、權威", reversed: "專制、僵化、冷酷" },
+  "5_hierophant": { upright: "傳統、信仰、學習", reversed: "質疑、叛逆、教條" },
+  "6_lovers": { upright: "愛情、選擇、和諧", reversed: "誘惑、分歧、衝突" },
+  "7_chariot": { upright: "勝利、意志力、掌控", reversed: "失控、挫敗、爭執" },
+  "8_strength": { upright: "勇氣、內在力量、溫柔克服", reversed: "情緒失控、懦弱、壓抑" },
+  "9_hermit": { upright: "內省、智慧、靜心", reversed: "孤立、迷失、封閉" },
+  "10_wheel_of_fortune": { upright: "轉變、機運、循環", reversed: "停滯、命運阻礙、抗拒改變" },
+  "11_justice": { upright: "公平、真理、因果", reversed: "不公、偏頗、逃避責任" },
+  "12_hanged_man": { upright: "犧牲、等待、放下", reversed: "拖延、頑固、逃避" },
+  "13_death": { upright: "轉化、重生、釋放", reversed: "抗拒改變、停滯、恐懼" },
+  "14_temperance": { upright: "平衡、協調、療癒", reversed: "失衡、極端、不安" },
+  "15_devil": { upright: "誘惑、束縛、物質慾望", reversed: "擺脫束縛、覺醒" },
+  "16_tower": { upright: "突變、崩壞、重建", reversed: "否認改變、災難拖延" },
+  "17_star": { upright: "希望、療癒、靈感", reversed: "失望、迷惘、信心低落" },
+  "18_moon": { upright: "直覺、夢境、潛意識", reversed: "幻覺、欺騙、混亂" },
+  "19_sun": { upright: "成功、喜悅、正能量", reversed: "延遲、不安、傲慢" },
+  "20_judgement": { upright: "覺醒、重生、反省", reversed: "拖延、批判、迷惑" },
+  "21_world": { upright: "完成、圓滿、整合", reversed: "未完成、停滯、封閉" },
+};
+
 
   "Cups_1": { upright: "新感情、靈感湧現、心靈滿足",reversed: "感情壓抑、虛假的開始、冷漠"},
   "Cups_2": { upright: "戀愛、合作、心靈契合",  reversed: "爭執、分離、情感不平衡" },
