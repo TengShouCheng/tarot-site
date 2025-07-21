@@ -5,8 +5,19 @@
   <title>塔羅牌抽卡</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding: 20px; background-color: #f4f4f4; }
-    .card { display: inline-block; margin: 10px; }
-    .card img { height: 480px; transform: rotate(0deg); transition: transform 0.3s; }
+    .card img {
+  width: 100%;
+  max-width: 160px;  /* 手機看起來不會太大 */
+  height: auto;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+.card {
+  display: inline-block;
+  margin: 10px;
+  width: 45vw;  /* 佔螢幕寬度約45%，手機排3張也不會太擠 */
+  max-width: 160px;
+}
     .card.reversed img { transform: rotate(180deg); }
     .meaning { max-width: 400px; margin: 20px auto; font-size: 0.95em; }
   </style>
