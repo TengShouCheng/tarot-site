@@ -32,13 +32,13 @@
 	function getImagePath(cardName) {
   if (/^\d+_/.test(cardName)) {
     return `major/${cardName}.jpg`;
-  } else if (cardName.startsWith("Cups_")) {
+  } else if (cardName.startsWith("cups_")) {
     return `cups/${cardName}.jpg`;
-  } else if (cardName.startsWith("Wands_")) {
+  } else if (cardName.startsWith("wands_")) {
     return `wands/${cardName}.jpg`;
-  } else if (cardName.startsWith("Swords_")) {
+  } else if (cardName.startsWith("swords_")) {
     return `swords/${cardName}.jpg`;
-  } else if (cardName.startsWith("Pentacles_")) {
+  } else if (cardName.startsWith("pentacles_")) {
     return `pentacles/${cardName}.jpg`;
   } else {
     return "";
@@ -53,17 +53,17 @@
   "20_judgement", "21_world",
 
       // 小牌（舉例 Cups, 可依命名加入其餘）
-      "Cups_1", "Cups_2", "Cups_3", "Cups_4", "Cups_5", "Cups_6", "Cups_7", "Cups_8", "Cups_9", "Cups_10",
-      "Cups_Page", "Cups_Knight", "Cups_Queen", "Cups_King",
+       "cups_1", "cups_2", "cups_3", "cups_4", "cups_5", "cups_6", "cups_7", "cups_8", "cups_9", "cups_10",
+  "cups_page", "cups_knight", "cups_queen", "cups_king",
 
-      "Wands_1", "Wands_2", "Wands_3", "Wands_4", "Wands_5", "Wands_6", "Wands_7", "Wands_8", "Wands_9", "Wands_10",
-      "Wands_Page", "Wands_Knight", "Wands_Queen", "Wands_King",
+  "wands_1", "wands_2", "wands_3", "wands_4", "wands_5", "wands_6", "wands_7", "wands_8", "wands_9", "wands_10",
+  "wands_page", "wands_knight", "wands_queen", "wands_king",
 
-      "Swords_1", "Swords_2", "Swords_3", "Swords_4", "Swords_5", "Swords_6", "Swords_7", "Swords_8", "Swords_9", "Swords_10",
-      "Swords_Page", "Swords_Knight", "Swords_Queen", "Swords_King",
+  "swords_1", "swords_2", "swords_3", "swords_4", "swords_5", "swords_6", "swords_7", "swords_8", "swords_9", "swords_10",
+  "swords_page", "swords_knight", "swords_queen", "swords_king",
 
-      "Pentacles_1", "Pentacles_2", "Pentacles_3", "Pentacles_4", "Pentacles_5", "Pentacles_6", "Pentacles_7", "Pentacles_8", "Pentacles_9", "Pentacles_10",
-      "Pentacles_Page", "Pentacles_Knight", "Pentacles_Queen", "Pentacles_King"
+  "pentacles_1", "pentacles_2", "pentacles_3", "pentacles_4", "pentacles_5", "pentacles_6", "pentacles_7", "pentacles_8", "pentacles_9", "pentacles_10",
+  "pentacles_page", "pentacles_knight", "pentacles_queen", "pentacles_king"
     ];
 
     const meanings = {
@@ -92,67 +92,67 @@
 
 
 
-  "Cups_1": { upright: "新感情、靈感湧現、心靈滿足",reversed: "感情壓抑、虛假的開始、冷漠"},
-  "Cups_2": { upright: "戀愛、合作、心靈契合",  reversed: "爭執、分離、情感不平衡" },
-  "Cups_3": { upright: "友誼、慶祝、社交愉悅", reversed: "過度放縱、八卦、排斥" },
-  "Cups_4": {  upright: "沉思、無聊、情感空虛",reversed: "機會到來、重新接納、突破冷漠"},
-  "Cups_5": {  upright: "失望、悲傷、遺憾", reversed: "釋懷、恢復希望、轉化痛苦"  },
-  "Cups_6": { upright: "回憶、童年、舊愛重現", reversed: "困於過去、懷舊過度、情感停滯" },
-  "Cups_7": { upright: "選擇過多、幻想、難以抉擇", reversed: "明確目標、擺脫迷惑、看清現實" },
-  "Cups_8": { upright: "放棄、情感疏離、尋找真我", reversed: "逃避問題、無法放手、回頭"},
-  "Cups_9": { upright: "願望實現、滿足、成就", reversed: "自滿、物質主義、不切實際"},
-  "Cups_10": { upright: "家庭幸福、圓滿結局、愛的延續", reversed: "家庭衝突、表面和諧、內在不安"},
-  "Cups_Page": { upright: "情感訊息、純真、創意開展", reversed: "幼稚、幻想破滅、逃避現實"},
-  "Cups_Knight": {upright: "追求愛情、浪漫主義、藝術性", reversed: "情緒不穩、過度理想化、不成熟" },
-  "Cups_Queen": { upright: "溫柔體貼、直覺力強、情感支持",reversed: "情緒依賴、多愁善感、操控他人"},
-  "Cups_King": {upright: "情緒穩定、理解力強、有同理心",reversed: "情緒壓抑、冷漠、情感操縱"},
+  "cups_1": { upright: "新感情、靈感湧現、心靈滿足",reversed: "感情壓抑、虛假的開始、冷漠"},
+  "cups_2": { upright: "戀愛、合作、心靈契合",  reversed: "爭執、分離、情感不平衡" },
+  "cups_3": { upright: "友誼、慶祝、社交愉悅", reversed: "過度放縱、八卦、排斥" },
+  "cups_4": {  upright: "沉思、無聊、情感空虛",reversed: "機會到來、重新接納、突破冷漠"},
+  "cups_5": {  upright: "失望、悲傷、遺憾", reversed: "釋懷、恢復希望、轉化痛苦"  },
+  "cups_6": { upright: "回憶、童年、舊愛重現", reversed: "困於過去、懷舊過度、情感停滯" },
+  "cups_7": { upright: "選擇過多、幻想、難以抉擇", reversed: "明確目標、擺脫迷惑、看清現實" },
+  "cups_8": { upright: "放棄、情感疏離、尋找真我", reversed: "逃避問題、無法放手、回頭"},
+  "cups_9": { upright: "願望實現、滿足、成就", reversed: "自滿、物質主義、不切實際"},
+  "cups_10": { upright: "家庭幸福、圓滿結局、愛的延續", reversed: "家庭衝突、表面和諧、內在不安"},
+  "cups_Page": { upright: "情感訊息、純真、創意開展", reversed: "幼稚、幻想破滅、逃避現實"},
+  "cups_Knight": {upright: "追求愛情、浪漫主義、藝術性", reversed: "情緒不穩、過度理想化、不成熟" },
+  "cups_Queen": { upright: "溫柔體貼、直覺力強、情感支持",reversed: "情緒依賴、多愁善感、操控他人"},
+  "cups_King": {upright: "情緒穩定、理解力強、有同理心",reversed: "情緒壓抑、冷漠、情感操縱"},
 
-"Wands_1": { upright: "創造力、新計畫、靈感", reversed: "延遲、缺乏方向、動力不足" },
-"Wands_2": { upright: "規劃、展望未來、選擇", reversed: "猶豫不決、機會錯失", },
-"Wands_3": { upright: "成果、遠景、拓展", reversed: "延誤、未實現、限制" },
-"Wands_4": { upright: "慶祝、穩定、家庭和諧", reversed: "家庭不合、不穩定" },
-"Wands_5": { upright: "競爭、衝突、挑戰", reversed: "避免衝突、壓抑、妥協" },
-"Wands_6": { upright: "勝利、認可、公眾成就", reversed: "驕傲、自我懷疑、失敗" },
-"Wands_7": { upright: "防衛、自信、堅持立場", reversed: "退縮、防守薄弱、壓力大" },
-"Wands_8": { upright: "快速發展、溝通、旅行", reversed: "延遲、阻礙、混亂" },
-"Wands_9": { upright: "堅持、恢復、防備", reversed: "疲憊、焦慮、無法持續" },
-"Wands_10": { upright: "負擔、壓力、責任", reversed: "釋放壓力、過度承擔" },
-"Wands_Page": { upright: "創意訊息、熱情學習", reversed: "缺乏方向、不成熟" },
-"Wands_Knight": { upright: "冒險、行動力、熱情", reversed: "魯莽、衝動、草率" },
-"Wands_Queen": { upright: "自信、領導、魅力", reversed: "掌控慾、嫉妒、不安" },
-"Wands_King": { upright: "領導力、遠見、穩重熱情", reversed: "專斷、衝動、控制慾" },
+"wands_1": { upright: "創造力、新計畫、靈感", reversed: "延遲、缺乏方向、動力不足" },
+"wands_2": { upright: "規劃、展望未來、選擇", reversed: "猶豫不決、機會錯失", },
+"wands_3": { upright: "成果、遠景、拓展", reversed: "延誤、未實現、限制" },
+"wands_4": { upright: "慶祝、穩定、家庭和諧", reversed: "家庭不合、不穩定" },
+"wands_5": { upright: "競爭、衝突、挑戰", reversed: "避免衝突、壓抑、妥協" },
+"wands_6": { upright: "勝利、認可、公眾成就", reversed: "驕傲、自我懷疑、失敗" },
+"wands_7": { upright: "防衛、自信、堅持立場", reversed: "退縮、防守薄弱、壓力大" },
+"wands_8": { upright: "快速發展、溝通、旅行", reversed: "延遲、阻礙、混亂" },
+"wands_9": { upright: "堅持、恢復、防備", reversed: "疲憊、焦慮、無法持續" },
+"wands_10": { upright: "負擔、壓力、責任", reversed: "釋放壓力、過度承擔" },
+"wands_Page": { upright: "創意訊息、熱情學習", reversed: "缺乏方向、不成熟" },
+"wands_Knight": { upright: "冒險、行動力、熱情", reversed: "魯莽、衝動、草率" },
+"wands_Queen": { upright: "自信、領導、魅力", reversed: "掌控慾、嫉妒、不安" },
+"wands_King": { upright: "領導力、遠見、穩重熱情", reversed: "專斷、衝動、控制慾" },
 
 // 第三部分：寶劍（Swords）
-"Swords_1": { upright: "新想法、清晰、真相", reversed: "混亂、誤導、誤解" },
-"Swords_2": { upright: "猶豫、抉擇、內心拉扯", reversed: "逃避、情緒封閉" },
-"Swords_3": { upright: "心碎、背叛、痛苦", reversed: "療癒、釋懷、傷口復原" },
-"Swords_4": { upright: "休息、冥想、康復", reversed: "壓力大、無法放鬆" },
-"Swords_5": { upright: "衝突、勝利但孤獨", reversed: "悔意、彌補、反思" },
-"Swords_6": { upright: "離開困境、過渡", reversed: "無法放下、困於過去" },
-"Swords_7": { upright: "欺瞞、策略、逃避", reversed: "坦承、揭露真相" },
-"Swords_8": { upright: "束縛、無力、限制", reversed: "釋放、重獲自由" },
-"Swords_9": { upright: "焦慮、惡夢、自我折磨", reversed: "釋懷、減輕壓力" },
-"Swords_10": { upright: "背叛、崩潰、結束", reversed: "重生、走出低谷" },
-"Swords_Page": { upright: "好奇心、訊息、觀察力", reversed: "散漫、八卦、不實訊息" },
-"Swords_Knight": { upright: "快速行動、果斷", reversed: "衝動、誤判、攻擊性" },
-"Swords_Queen": { upright: "理性、獨立、清晰判斷", reversed: "冷酷、悲觀、孤立" },
-"Swords_King": { upright: "權威、邏輯、公正", reversed: "嚴苛、濫用權力、無情" },
+"swords_1": { upright: "新想法、清晰、真相", reversed: "混亂、誤導、誤解" },
+"swords_2": { upright: "猶豫、抉擇、內心拉扯", reversed: "逃避、情緒封閉" },
+"swords_3": { upright: "心碎、背叛、痛苦", reversed: "療癒、釋懷、傷口復原" },
+"swords_4": { upright: "休息、冥想、康復", reversed: "壓力大、無法放鬆" },
+"swords_5": { upright: "衝突、勝利但孤獨", reversed: "悔意、彌補、反思" },
+"swords_6": { upright: "離開困境、過渡", reversed: "無法放下、困於過去" },
+"swords_7": { upright: "欺瞞、策略、逃避", reversed: "坦承、揭露真相" },
+"swords_8": { upright: "束縛、無力、限制", reversed: "釋放、重獲自由" },
+"swords_9": { upright: "焦慮、惡夢、自我折磨", reversed: "釋懷、減輕壓力" },
+"swords_10": { upright: "背叛、崩潰、結束", reversed: "重生、走出低谷" },
+"swords_Page": { upright: "好奇心、訊息、觀察力", reversed: "散漫、八卦、不實訊息" },
+"swords_Knight": { upright: "快速行動、果斷", reversed: "衝動、誤判、攻擊性" },
+"swords_Queen": { upright: "理性、獨立、清晰判斷", reversed: "冷酷、悲觀、孤立" },
+"swords_King": { upright: "權威、邏輯、公正", reversed: "嚴苛、濫用權力、無情" },
 
 // 第四部分：金幣（Pentacles）
-"Pentacles_1": { upright: "財富開始、物質機會", reversed: "機會流失、金錢問題" },
-"Pentacles_2": { upright: "平衡財務、多工管理", reversed: "失衡、壓力大" },
-"Pentacles_3": { upright: "合作、技術、職場成就", reversed: "不合作、品質不佳" },
-"Pentacles_4": { upright: "保守、控制、囤積", reversed: "釋放、失去控制" },
-"Pentacles_5": { upright: "貧困、孤立、經濟困難", reversed: "希望、援助、改善" },
-"Pentacles_6": { upright: "施與受、慷慨、援助", reversed: "依賴、不公平、欠缺" },
-"Pentacles_7": { upright: "耐心、評估、耕耘收穫", reversed: "焦躁、浪費、停滯" },
-"Pentacles_8": { upright: "專注、技能提升、努力", reversed: "敷衍、缺乏熱情" },
-"Pentacles_9": { upright: "獨立、財務穩定、豐盛", reversed: "孤獨、虛榮、財務不實" },
-"Pentacles_10": { upright: "家族財富、穩定、安全感", reversed: "家庭糾紛、財務衝突" },
-"Pentacles_Page": { upright: "學習、實習、財務規劃", reversed: "拖延、學習困難" },
-"Pentacles_Knight": { upright: "穩健、勤奮、實際", reversed: "固執、遲緩、缺乏變通" },
-"Pentacles_Queen": { upright: "務實、關懷、物質豐盛", reversed: "過度操心、自我忽略" },
-"Pentacles_King": { upright: "成功、穩定、理財高手", reversed: "貪婪、固執、保守過度" },
+"pentacles_1": { upright: "財富開始、物質機會", reversed: "機會流失、金錢問題" },
+"pentacles_2": { upright: "平衡財務、多工管理", reversed: "失衡、壓力大" },
+"pentacles_3": { upright: "合作、技術、職場成就", reversed: "不合作、品質不佳" },
+"pentacles_4": { upright: "保守、控制、囤積", reversed: "釋放、失去控制" },
+"pentacles_5": { upright: "貧困、孤立、經濟困難", reversed: "希望、援助、改善" },
+"pentacles_6": { upright: "施與受、慷慨、援助", reversed: "依賴、不公平、欠缺" },
+"pentacles_7": { upright: "耐心、評估、耕耘收穫", reversed: "焦躁、浪費、停滯" },
+"pentacles_8": { upright: "專注、技能提升、努力", reversed: "敷衍、缺乏熱情" },
+"pentacles_9": { upright: "獨立、財務穩定、豐盛", reversed: "孤獨、虛榮、財務不實" },
+"pentacles_10": { upright: "家族財富、穩定、安全感", reversed: "家庭糾紛、財務衝突" },
+"pentacles_Page": { upright: "學習、實習、財務規劃", reversed: "拖延、學習困難" },
+"pentacles_Knight": { upright: "穩健、勤奮、實際", reversed: "固執、遲緩、缺乏變通" },
+"pentacles_Queen": { upright: "務實、關懷、物質豐盛", reversed: "過度操心、自我忽略" },
+"pentacles_King": { upright: "成功、穩定、理財高手", reversed: "貪婪、固執、保守過度" },
 
 
 
